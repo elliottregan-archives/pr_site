@@ -139,6 +139,7 @@ h3.tagline {
 h4 {
   font-size: 1.8em;
   margin-bottom: 10px;
+  margin-top: 40px;
   font-weight: 200;
 }
 
@@ -407,15 +408,25 @@ section#profile {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.09);
 }
 
+.featured {
+  display: none;
+}
+
+ul.featured {
+  list-style: outside;
+  padding: 0 80px 0 40px;
+}
+
+.featured li {
+  line-height: 1.6em;
+  text-indent: 2px;
+}
+
 .portrait {
   float: right;
   height: 200px;
   width: 180px;
   background: url(img/portrait.jpg) no-repeat center center;
-}
-
-.personal_info {
-  height: 200px;
 }
 
 .logo {

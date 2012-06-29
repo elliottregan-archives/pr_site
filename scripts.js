@@ -31,6 +31,7 @@ $(document).ready(function() {
   $("#forth_click").click(function() {
     $("section#profile, .notification").fadeOut()
     $("section#featured_info").delay(400).fadeIn()
+    $(".featured").show()
   })
   
   $("#fifth_click").click(function() {
