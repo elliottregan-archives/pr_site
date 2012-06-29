@@ -8,7 +8,7 @@ $(document).ready(function() {
     $(this).parent().fadeOut()
   })
   
-  $("#overlay_box .close").click(function() {
+  $("#overlay_box .close, #overlay").click(function() {
     $("#overlay_box, #overlay").fadeOut()
   })
   
@@ -19,7 +19,7 @@ $(document).ready(function() {
   })
 
   $("#second_click").click(function() {
-    $("#overlay, #overlay_box, section#landing").fadeOut()
+    $("#overlay, #overlay_box, section#landing, h2.sub").fadeOut()
     $("section#enter_info").delay(400).fadeIn()
   })
   

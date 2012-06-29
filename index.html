@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>airPR</title>
+  <title>airPR | PR done better.</title>
   <meta charset=UTF-8>
   <link rel="stylesheet" href="styles.css" type="text/css" />
   <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
@@ -13,10 +13,10 @@
     <div class="close">x</div>
     <h3>Create your account:</h3>
     <form method="post" action="" class="registration_pt2">
-      <input type="text" name="fname" value="" placeholder="First Name" />
-      <input type="text" name="lname" value="" placeholder="Last Name"/>
-      <input type="text" name="pass" value="" placeholder="Password"/>
-      <input type="text" name="pass_confirm" value="" placeholder="Confirm Password"/>
+      <input type="text" name="name" value="John Smith" placeholder="First Name" />
+      <input type="email" name="email" value="jsmith@company.com" /><hr />
+      <input type="password" name="pass" value="" placeholder="Password"/>
+      <input type="password" name="pass_confirm" value="" placeholder="Confirm Password"/>
       <button type="reset" id="second_click">Continue</button>
     </form>
   </div>
@@ -30,17 +30,17 @@
         </ul>
       </nav>
       <hgroup>
-        <h1>airPR</h1>
-        <h2>PR done better.</h2>
+        <h1>air<span class="blue">PR</span></h1>
+        <h2 class="sub">PR done better.</h2>
       </hgroup>
     </header>
     <section id="landing">
       <div id="inner">
-        <h3 class="tagline">Connect. Publicize. Save.</h3>
+        <h3 class="tagline">Hello, John. Welcome to air<span class="blue">PR</span>.</h3>
         <form method="" action="false" class="email_reg">
-          <h3>Enter your email below to get started:</h3>
-          <input type="text" name="email" value="" placeholder="email"/>
-          <button type="reset"id="first_click">sign up!</button>
+          <h3>Confirm your invite code below to get started:</h3>
+          <input type="text" name="code" value="8j35rWxwMN" placeholder="Invite Code"/>
+          <button type="reset"id="first_click">confirm</button>
         </form>
         <div class="initiative">
           <div class="row">
@@ -63,7 +63,6 @@
               <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
             </div>
           </div>
-          <h3 class="tagline">You and your business will love us!</h3>
         </div>
       </div>
     </section>
@@ -97,7 +96,7 @@
       <h4><strong>Congratulations!</strong> 
       <p>You have just completed your registration.</h4> Review your profile below, then check out the open projects.</p>
       <div class="get_featured_btn">
-        <button id="forth_click">Get Featured!</button>
+        <button type="reset" id="forth_click">Get Featured!</button>
       </div>
       <div class="get_featured">
         <h5>Want to be a featured PR Person?</h5>
@@ -115,14 +114,14 @@
           <div class="portrait">
             <div class="upload">
               Upload a portrait of yourself. <br />
-              <button>Upload</button>
+              <button type="reset">Upload</button>
             </div>
           </div>
           <h1>John Smith</h1>
           <div class="logo">
             <div class="upload">
               Upload your company logo.
-              <button>Upload</button>
+              <button type="reset">Upload</button>
             </div>
           </div>
           <h2></h2>

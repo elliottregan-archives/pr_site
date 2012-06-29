@@ -50,6 +50,12 @@ html {
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+.blue {
+  color: #4ab0e8;
+  font-weight: bold;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
 #overlay {
   position: fixed;
   width: 100%;
@@ -214,30 +220,43 @@ form.email_reg button {
   text-shadow: 0 1px 1px #ffffff;
 }
 
+button[type="reset"]:hover {
+  background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(254, 254, 254, 0) 42%, rgba(254, 254, 254, 0.38) 46.9%, rgba(255, 255, 255, 0.12) 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.3)), color-stop(0.42, rgba(254, 254, 254, 0)), color-stop(0.469, rgba(254, 254, 254, 0.38)), to(rgba(255, 255, 255, 0.12)));
+}
+
+button[type="reset"]:active {
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.55);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.55);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.21)));
+  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.21) 100%);
+}
+
 .initiative {
-  width: 730px;
+  width: 690px;
   margin: 40px auto;
 }
 
+.row:last-of-type {
+  margin-bottom: 20px;
+}
+
 .block {
-  width: 240px;
-  margin: 25px 30px;
+  width: 280px;
+  margin: 0;
   display: inline-block;
-  background-color: #bebebe;
   padding: 20px 30px;
-  float: left;
-  
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -o-border-radius: 6px;
-  background: whitesmoke;
-  background: -moz-linear-gradient(90deg, #f4f4f4 0%, #eeeeee 100%) #cacaca;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f4f4f4), to(#eeeeee)) #cacaca;
-  border: 1px solid #979797;
-  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.27), inset 0 1px 0 #ffffff;
-  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.27), inset 0 1px 0 #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.27), inset 0 1px 0 #ffffff;
-  border-bottom-color: #6d6d6d;
+  border-right-style: solid;
+  border-right-color: #d5d5d5;
+}
+
+.block:nth-of-type(odd) {
+  border-right-width: 1px;
+}
+
+.row:first-of-type {
+  border-bottom: 1px solid #d5d5d5;
 }
 
 section#landing {
@@ -456,14 +475,14 @@ section#profile {
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #c97912;
+  top: -1px;
+  right: -1px;
+  background-color: #ec9c35;
   padding: 4px 8px;
   border: 1px solid #804d14;
-  -moz-box-shadow: -1px 1px 0 rgba(128, 77, 20, 0.16);
-  -webkit-box-shadow: -1px 1px 0 rgba(128, 77, 20, 0.16);
-  box-shadow: -1px 1px 0 rgba(128, 77, 20, 0.16);
+  -moz-box-shadow: inset 1px -1px 0 rgba(255, 255, 255, 0.44), -1px 1px 0 rgba(128, 77, 20, 0.16);
+  -webkit-box-shadow: inset 1px -1px 0 rgba(255, 255, 255, 0.44), -1px 1px 0 rgba(128, 77, 20, 0.16);
+  box-shadow: inset 1px -1px 0 rgba(255, 255, 255, 0.44), -1px 1px 0 rgba(128, 77, 20, 0.16);
   cursor: pointer;
 }
 
@@ -490,8 +509,11 @@ ul.benefits {
 .get_featured {
   width: 300px;
   margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.16);
   padding: 10px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .get_featured_btn {
@@ -510,9 +532,9 @@ ul.benefits {
   background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(254, 254, 254, 0.07) 46.3%, rgba(254, 254, 254, 0.79) 49.6%, rgba(255, 255, 255, 0) 100%) #ececec;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.6)), color-stop(0.463, rgba(254, 254, 254, 0.07)), color-stop(0.496, rgba(254, 254, 254, 0.79)), to(rgba(255, 255, 255, 0))) #ececec;
   text-shadow: 0 1px 1px #ffffff;
-  -moz-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51), inset 0 -2px 0 rgba(0, 0, 0, 0.17), inset 0 2px 0 #ffffff, inset 0 0 12px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51), inset 0 -2px 0 rgba(0, 0, 0, 0.17), inset 0 2px 0 #ffffff, inset 0 0 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51), inset 0 -2px 0 rgba(0, 0, 0, 0.17), inset 0 2px 0 #ffffff, inset 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
 /* @end */
