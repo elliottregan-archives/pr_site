@@ -14,7 +14,8 @@ $(document).ready(function() {
   
   
   $("#first_click").click(function() {
-    $("#overlay, #overlay_box").fadeIn()
+    $("#overlay").fadeIn()
+    $("#overlay_box").delay(600).fadeIn()
   })
 
   $("#second_click").click(function() {
@@ -28,8 +29,13 @@ $(document).ready(function() {
   })
   
   $("#forth_click").click(function() {
-    $("section#profile").fadeOut()
-    $("section#profile, .notification").delay(400).fadeIn()
+    $("section#profile, .notification").fadeOut()
+    $("section#featured_info").delay(400).fadeIn()
+  })
+  
+  $("#fifth_click").click(function() {
+    $("section#featured_info").fadeOut()
+    $("section#profile").delay(400).fadeIn()
   })
 
 });

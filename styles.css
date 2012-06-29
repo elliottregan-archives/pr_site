@@ -96,6 +96,7 @@ html {
 .wrapper {
   width: 960px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .inner_wrapper {
@@ -141,6 +142,10 @@ button {
 
 section {
   margin-bottom: 40px;
+}
+
+footer {
+  padding: 20px;
 }
 
 nav {
@@ -236,7 +241,7 @@ form.email_reg button {
 }
 
 section#landing {
-  display: ;
+  display: block;
 }
 
 section#enter_info {
@@ -244,6 +249,10 @@ section#enter_info {
 }
 
 section#profile {
+  display: none;
+}
+
+section#featured_info {
   display: none;
 }
 
@@ -349,8 +358,7 @@ textarea.info:active, textarea.info:focus {
 .next_btn {
   float: right;
   clear: both;
-  margin-top: 40px;
-  margin-right: 54px;
+  margin: 40px 54px 40px 0;
   padding: 6px 25px;
   font-size: 1.2em;
   -webkit-border-radius: 4px;
@@ -505,6 +513,42 @@ ul.benefits {
   -moz-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+/* @end */
+
+/* @group Featured Info */
+
+section#featured_info {
+  margin-top: 40px;
+}
+
+.reg_instr p {
+  width: 540px;
+  margin: 20px 0;
+  color: #2d2d2d;
+  line-height: 1.2em;
+}
+
+.reg_instr p:first-of-type {
+  margin-top: 0;
+}
+
+#featured_info .number {
+  margin-top: 40px;
+}
+
+#featured_info .number:first-of-type {
+  margin-top: 20px;
+}
+
+#featured_info .inner_wrapper {
+
+}
+
+.reg_instr {
+  margin: auto;
+  width: 540px;
 }
 
 /* @end */
